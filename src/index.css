@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: colfax-web, sans-serif;
+  }
+}
+
+:root {
+  --background: white;
+  --backgroundtwo: rgb(243 244 246);
+  --backgroundthree: rgb(75 85 99);
+  --backgroundfour: rgb(244,244,244);
+  --backgroundfive: rgb(249,249,249);
+  --backgroundsix: rgb(156 163 175);
+  --text: rgb(75 85 99);
+  --texttwo: white;
+  --texthover: rgb(31 41 55);
+  --border: rgb(229 231 235);
+}
+
+/* Dark theme */
+.dark {
+  --background: #212121; 
+  --backgroundtwo : rgb(31 41 55);
+  --backgroundthree : rgb(243 244 246);
+  --backgroundfour : rgb(47,47,47);
+  --backgroundfive : rgb(23,23,23);
+  --backgroundsix: rgb(75 85 99);
+  --text: white; 
+  --texttwo: rgb(75 85 99); 
+  --texthover: rgb(75 85 99);
+  --border: rgb(107 114 128);
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: var(--backgroundsix);
+  border-radius: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: var(--backgroundfour);
+  border-radius: 8px;
+}
+
+.scrollbar-custom {
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+
+/* Formatted text styles */
+.formatted-text {
+  line-height: 1.6;
+}
+
+.formatted-text h1,
+.formatted-text h2,
+.formatted-text h3,
+.formatted-text h4,
+.formatted-text h5,
+.formatted-text h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.formatted-text ul {
+  margin: 0.75rem 0;
+}
+
+.formatted-text li {
+  margin: 0.25rem 0;
+}
+
+.formatted-text p {
+  margin: 0.5rem 0;
+}
+
+.formatted-text code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.formatted-text pre {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.4;
+}
